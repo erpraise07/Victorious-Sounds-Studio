@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Victorious Sounds Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victorious Sounds Studio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="hero">
   <div class="hero-overlay">
-    <img src="images/logo.png" alt="Victorious Sounds Studio Logo" class="logo">
+    <img src="images/logo.png" alt="Victorious Sounds Studio logo" class="logo">
     <p class="tagline">Sound Creation • Production • Mixing • Recording</p>
     <a href="#contact" class="btn">Contact</a>
   </div>
@@ -35,6 +35,34 @@
   </ul>
 </section>
 
+<section class="section">
+  <h2>Studio Photos</h2>
+  <p>Click any photo to open it full size.</p>
+  <div class="gallery">
+      <a href="images/gallery01.jpg" target="_blank"><img src="images/gallery01.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery02.jpg" target="_blank"><img src="images/gallery02.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery04.jpg" target="_blank"><img src="images/gallery04.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery05.jpg" target="_blank"><img src="images/gallery05.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery06.jpg" target="_blank"><img src="images/gallery06.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery07.jpg" target="_blank"><img src="images/gallery07.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery08.jpg" target="_blank"><img src="images/gallery08.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery09.jpg" target="_blank"><img src="images/gallery09.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery10.jpg" target="_blank"><img src="images/gallery10.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery11.jpg" target="_blank"><img src="images/gallery11.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery12.jpg" target="_blank"><img src="images/gallery12.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery13.jpg" target="_blank"><img src="images/gallery13.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery14.jpg" target="_blank"><img src="images/gallery14.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery15.jpg" target="_blank"><img src="images/gallery15.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery16.jpg" target="_blank"><img src="images/gallery16.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery17.jpg" target="_blank"><img src="images/gallery17.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery18.jpg" target="_blank"><img src="images/gallery18.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery19.jpg" target="_blank"><img src="images/gallery19.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery20.jpg" target="_blank"><img src="images/gallery20.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery21.jpg" target="_blank"><img src="images/gallery21.jpg" alt="Victorious Sounds Studio photo"></a>
+      <a href="images/gallery22.jpg" target="_blank"><img src="images/gallery22.jpg" alt="Victorious Sounds Studio photo"></a>
+  </div>
+</section>
+
 <section class="section dark" id="contact">
   <h2>Contact</h2>
   <p><strong>Edgar Rochester</strong></p>
@@ -43,8 +71,12 @@
 </section>
 
 <footer>
-  © 2026 Victorious Sounds Studio
+  © <span id="year"></span> Victorious Sounds Studio
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
